@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Scooters App</title>
+</head>
+<body>
+    <div id="header">
+        <h1 id="main-title">Scooters App</h1>
+    </div>
+    <div id="scooters-dashboard">
+        <h2 id="dashboard-title">Dashboard</h2>
+        <div id="dashboard-buttons">
+            <select name="select-status" id="select-status">
+                <option value="" selected disabled hidden>Select Status</option>
+                <option value="available">Available</option>
+                <option value="inRepair">In Repair</option>
+                <option value="unavailable">Unavailable</option>
+            </select>
+            <button id="filter-button">Filter By Category</button>
+            <button id="new-scooter-button">+</button>
+            <table id="scooters-table">
+                <thead id="scooters-table-header">
+                    <tr>
+                        <th id="id-head">Id</th>
+                        <th id="model-head">Model</th>
+                        <th id="battery-head">Battery Level</th>
+                        <th id="image-head">Image</th>
+                        <th id="color-head">Color</th>
+                        <th id="status-head">Status</th>
+                        <th id="actions-head">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="scooters-table-body"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
